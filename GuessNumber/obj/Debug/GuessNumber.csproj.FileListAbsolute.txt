@@ -1,0 +1,13 @@
+C:\Users\Sam\source\repos\GuessNumber\GuessNumber\bin\Debug\GuessNumber.exe.config
+C:\Users\Sam\source\repos\GuessNumber\GuessNumber\bin\Debug\GuessNumber.exe
+C:\Users\Sam\source\repos\GuessNumber\GuessNumber\bin\Debug\GuessNumber.pdb
+C:\Users\Sam\source\repos\GuessNumber\GuessNumber\obj\Debug\GuessNumber.csprojAssemblyReference.cache
+C:\Users\Sam\source\repos\GuessNumber\GuessNumber\obj\Debug\GuessNumber.exe
+C:\Users\Sam\source\repos\GuessNumber\GuessNumber\obj\Debug\GuessNumber.pdb
+C:\Users\andes\Downloads\Dot net practice source\Dot net practice source\repos\GuessNumber\GuessNumber\bin\Debug\GuessNumber.exe.config
+C:\Users\andes\Downloads\Dot net practice source\Dot net practice source\repos\GuessNumber\GuessNumber\bin\Debug\GuessNumber.exe
+C:\Users\andes\Downloads\Dot net practice source\Dot net practice source\repos\GuessNumber\GuessNumber\bin\Debug\GuessNumber.pdb
+C:\Users\andes\Downloads\Dot net practice source\Dot net practice source\repos\GuessNumber\GuessNumber\obj\Debug\GuessNumber.csproj.AssemblyReference.cache
+C:\Users\andes\Downloads\Dot net practice source\Dot net practice source\repos\GuessNumber\GuessNumber\obj\Debug\GuessNumber.csproj.CoreCompileInputs.cache
+C:\Users\andes\Downloads\Dot net practice source\Dot net practice source\repos\GuessNumber\GuessNumber\obj\Debug\GuessNumber.exe
+C:\Users\andes\Downloads\Dot net practice source\Dot net practice source\repos\GuessNumber\GuessNumber\obj\Debug\GuessNumber.pdb
