@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GuessNumberWPF": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

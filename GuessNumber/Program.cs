@@ -8,7 +8,7 @@ namespace GuessNumber
 {
     class Program
     {
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
             GetAppInfo();
 
@@ -55,7 +55,7 @@ namespace GuessNumber
                 else { return; }
             }
         }
-        static void GetAppInfo()
+       public static void GetAppInfo()
         {
 
             string appName = "Guess Number";
@@ -68,7 +68,7 @@ namespace GuessNumber
 
             Console.ResetColor();
         }
-        static void GreetingUser()
+       public static void GreetingUser()
         {
             Console.WriteLine("What is your Name?");
             string name = Console.ReadLine();
@@ -76,7 +76,7 @@ namespace GuessNumber
             Console.WriteLine("Hello {0}, Let's play a game...", name);
 
         }
-        static void PrintColorMessage(ConsoleColor color,string Message)
+       public static void PrintColorMessage(ConsoleColor color,string Message)
         {
             Console.ForegroundColor = color;
             Console.WriteLine(Message);

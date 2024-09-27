@@ -1,0 +1,16 @@
+﻿<Window x:Class="GuessNumberWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuessNumberWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="Enter_a_number" Content="Enter a number" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Center" Height="48" Width="218" FontSize="24"/>
+        <Button x:Name="Submit" Content="Submit" HorizontalAlignment="Left" Margin="263,324,0,0" VerticalAlignment="Top" Height="33" Width="244" FontSize="24" Click="Submit_Click"/>
+        <Label x:Name="label" Content="Enter a number between 1 and 10" HorizontalAlignment="Left" VerticalAlignment="Top" Width="597" FontSize="24"/>
+        <TextBox x:Name="txtGuess" HorizontalAlignment="Left" Margin="311,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="24" TextChanged="txtGuess_TextChanged"/>
+
+    </Grid>
+</Window>

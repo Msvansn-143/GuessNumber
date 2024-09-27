@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "lm/RvLEEpzuO4udq4F6e2mXIGBlQq/HsIhOCYkhY6BrtfrLQkY4zKFnEQ8lPgIkn9f3gUy1mPn2I+IpdLqVpdA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\andes\\Downloads\\Dot net practice source\\Dot net practice source\\repos\\GuessNumber\\GuessNumberWPF\\GuessNumberWPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andes\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\andes\\.nuget\\packages\\system.drawing.common\\8.0.8\\system.drawing.common.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
