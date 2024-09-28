@@ -20,11 +20,15 @@ namespace GuessNumberWPF
   /// </summary>
   public partial class MainWindow : Window
   {
+   // MainWindow mainWindow = new MainWindow();
+   
+    
     public MainWindow()
     {
       InitializeComponent();
-      this.Loaded += MainWindow_Loaded;
-      WPFGuessNumber wPFGuessNumber = new WPFGuessNumber(this);
+      //this.Loaded += MainWindow_Loaded;
+     // WPFGuessNumber wPFGuessNumber = new WPFGuessNumber(this);
+     //MainWindow mainWindow = new MainWindow(); 
     }
 
     private void MainWindow_Loaded(object sender, RoutedEventArgs e)
@@ -36,57 +40,84 @@ namespace GuessNumberWPF
     private void Submit_Click(object sender, RoutedEventArgs e)
     {
       //string str = txtGuess.Text;
+      while(true) { 
+       // txtGuess.Clear();
+        //txtGuess.Focus();
       if (string.IsNullOrEmpty(txtGuess.Text) | int.Parse(txtGuess.Text)<0 | int.Parse(txtGuess.Text)>10)
       {
        System.Windows.MessageBox.Show("Please enter a valid number.", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Warning);
+          
+       MainWindow mainWindow = new MainWindow(); 
+        mainWindow.Show();
+        txtGuess.Clear();
+          txtGuess.Focus();
+          continue;
+          //  int userGuess = int.Parse(txtGuess.Text);
+          // Game logic here
 
-      //  int userGuess = int.Parse(txtGuess.Text);
-        // Game logic here
-
-      }
+        }
       if(Regex.IsMatch(txtGuess.Text, @"^[a-zA-Z]+$"))
         {
        System.Windows.MessageBox.Show("Please enter a Number not Alphabet");
-      }
+          
+        MainWindow mainWindow = new MainWindow();
+        mainWindow.Show();
+        txtGuess.Clear();
+          txtGuess.Focus();
+          continue;
+        }
       else {
         int userGuess = int.Parse(txtGuess.Text);
-        // WPFGuessNumber.GuessNumber(Convert.ToInt32(txtGuess.Text));
-        while (true)
-        {
-
-          // int correctNumber = 7;
-          Random R = new Random();
-
-          int correctNumber = R.Next(1, 10);
-
-          int guess = 0;
-
-          guess = userGuess;
-
-          while (guess != correctNumber)
+          // WPFGuessNumber.GuessNumber(Convert.ToInt32(txtGuess.Text));
+          while (true)
           {
 
-            //if (Convert.ToBoolean(input))
-            //{
+            // int correctNumber = 7;
+            Random R = new Random();
 
-            //  //MessageBox.Show("Please enter a Number not Alphabet");
-            //  continue;
-            //}
+            int correctNumber = R.Next(1, 10);
+
+            int guess = 0;
+
             guess = userGuess;
-            if (guess != correctNumber)
+
+            while (guess != correctNumber)
             {
-              MessageBoxResult result = System.Windows.MessageBox.Show("Wrong number ,please try again", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Warning);
-              if(result == MessageBoxResult.Yes)
+
+              //if (Convert.ToBoolean(input))
+              //{
+
+              //  //MessageBox.Show("Please enter a Number not Alphabet");
+              //  continue;
+              //}
+              guess = userGuess;
+              if (guess != correctNumber)
               {
+                MessageBoxResult result = System.Windows.MessageBox.Show("Wrong number ,please try again", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Warning);
+
+                  MainWindow mainWindow1 = new MainWindow();
+                //  mainWindow1.Show();
+                 mainWindow1.Show();
+                System.Windows.MessageBox.Show("Enter another number between 1 and 10");
                 txtGuess.Clear();
+
+            txtGuess.Focus(); 
+                continue;
+
+
+
+                
+             // txtGuess.Focus();
+
               }
+
             }
-
-
-
+            System.Windows.MessageBox.Show("You are CORRECT!!. ");
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            txtGuess.Clear();
+            //System.Windows.MessageBox.Show("Play Again");
           }
-                    System.Windows.MessageBox.Show("You are CORRECT!!. ");
-
 
           MessageBoxResult answer = System.Windows.MessageBox.Show("Play Again!?", "Confirmation", MessageBoxButton.YesNo);
           switch (answer)
